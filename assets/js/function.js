@@ -1,3 +1,4 @@
+
 // Creare lista di ingredienti e assegnare prezzo a ciascuno e genero gli input
 function generaInput(lista, elemento) {
     contatore = 0;

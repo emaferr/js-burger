@@ -46,9 +46,18 @@ document.querySelector('button').addEventListener('click', function () {
 
     }
 
-    console.log(sconto);
-    
-    
     document.getElementById("prezzo_finale").innerHTML = (new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR'}).format(prezzoTotale));
+
+    
+    // Definisco il nome panino come campo obbligatorio
+    var nomeBurger = document.getElementById("burger_name").value;
+
+    if (isNaN(nomeBurger)) {
+
+    }else {
+        alert("Inserire un nome Burger")
+        document.getElementById("prezzo_finale").innerHTML = (new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR'}).format("0"));
+
+    }
    
 });
