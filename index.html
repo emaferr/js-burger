@@ -4,7 +4,10 @@
 
   <head>
 
-    <title>Title</title>
+    <title>KB | King Burger </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/burger-top.png" type="image/png" />
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,26 +23,68 @@
 
   <body>
 
-    <section class="ingredienti">
-        <!-- Inputs inseriti dinamicamente via js -->
+    <div class="container">
 
+        <header>
 
-    </section>
+            <!-- Sezione Logo -->
+            <div class="logo small_container">
+                <h1 id="title" class="font-weight-bold">Create Your Burger</h1>
+                <img src="./assets/img/burger-top.png" alt="">
+            </div>
+    
+        </header>
 
-    <button>Calculate</button>
+        <main>
 
-    <div>
-        <input type="text" name="sconto" id="sconto">
+            <div class="small_container">
+
+                <!-- Nome burger (inserito dall'utente) -->
+                <input id="burger_name" class="mt-5 mb-2" type="text" placeholder="Name Your Burger">
+
+                <!-- Sezione ingredienti -->
+                <h3 class="mt-4">Ingredients</h3>
+
+                <!-- Inputs inseriti dinamicamente via js -->
+                <section class="ingredienti row mt-4"></section>
+                
+                <!-- Sezione sconto -->
+                <div class="mt-4">
+                    <span>Discount Coupon</span>
+                    <input type="text" name="sconto" id="sconto" class="mx-3">
+                   
+                </div>
+                
+                <!-- Calcola btn -->
+                <div class="mt-4 text-center">
+                    <button class="calculate_btn px-4 py-2">calculate</button>    
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="small_container footer_container">
+                <h3 class="text-white">Your Price</h3>
+                <span class="text-white font-weight-bold" id="prezzo_finale">0 €</span>
+            </div>
+
+        </footer>
+    
+        <!-- My JavaScript -->
+        <script src="./assets/js/function.js"></script>
+        <script src="./assets/js/main.js"></script>
+    
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+     
+    
     </div>
-      
-    <!-- My JavaScript -->
-    <script src="./assets/js/function.js"></script>
-    <script src="./assets/js/main.js"></script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
 

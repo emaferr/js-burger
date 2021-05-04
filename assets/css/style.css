@@ -1,0 +1,69 @@
+body {
+    background-color: #FFF5E2;
+}
+
+header {
+    background-color: #FDBB40;
+}
+
+.small_container{
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    position: relative;
+    height: 140px;
+}
+
+.logo img {
+    position: absolute;
+    right: -12%;
+    top: -20%;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+#burger_name{
+    font-size: 1.8rem;
+    border: none;
+}
+
+#title{
+    padding-top: 3.7rem;
+}
+
+#sconto {
+    border: none;
+    border-radius: .5rem;
+    background-color: #FFF5E2;
+    width: 75%;
+}
+
+
+.calculate_btn {
+    border: none;
+    border-radius: .5rem;
+    background-color: #FDBB40;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8rem;
+
+}
+
+footer {
+    background-color: #D33359;
+    padding: 1.5rem 0;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prezzo_finale{
+    font-size: 2rem;
+}

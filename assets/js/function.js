@@ -5,10 +5,11 @@ function generaInput(lista, elemento) {
         
        elemento.insertAdjacentHTML('beforeend', 
         `
-        <div class="form-group">
-        <img width="30" src="./assets/img/${lista[contatore][0] + '.svg'}">
-                <label for="${lista[contatore][0]}">${lista[contatore][0]}</label>
+        <div class="form-group col-6">
+        <img width="50" class="img-fluid" src="./assets/img/${lista[contatore][0] + '.svg'}">
+                <label class="px-3 font-weight-bold" for="${lista[contatore][0]}">${lista[contatore][0]}</label>
                 <input type="checkbox" name="${lista[contatore][0]}" id="${lista[contatore][0]}" data-price="${lista[contatore][1]}">
+                <span style="color: #D33359;" class="px-2">add</span>
         </div>
         `
         );

@@ -1,11 +1,11 @@
 // Invoca funzione generaInput
 var ingredienti = [
-    ['cheese', '1.5'],
-    ['fried-egg', '2'],
-    ['mustard', '0.5'],
-    ['tomato', '1'],
-    ['lettuce', '1'],
-    ['ketchup', '0.5'],
+    ['Cheese', '1.5'],
+    ['Fried-egg', '2'],
+    ['Mustard', '0.5'],
+    ['Tomato', '1'],
+    ['Lettuce', '1'],
+    ['Ketchup', '0.5'],
 ]
 
 var elementoIngredienti = document.querySelector('.ingredienti');
@@ -41,7 +41,7 @@ document.querySelector('button').addEventListener('click', function () {
     var sconto = codiciSconto.includes(codiceInserito);
 
     if (sconto == true) {
-        prezzoTotale = prezzoTotale - ((prezzoTotale * 10)/ 100 );
+        prezzoTotale =  prezzoTotale - ((prezzoTotale * 10)/ 100 );
     }else {
 
     }
@@ -49,6 +49,6 @@ document.querySelector('button').addEventListener('click', function () {
     console.log(sconto);
     
     
-    console.log(prezzoTotale);
+    document.getElementById("prezzo_finale").innerHTML = (new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR'}).format(prezzoTotale));
    
 });
