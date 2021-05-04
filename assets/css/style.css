@@ -50,8 +50,12 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 8rem;
-
 }
+
+.calculate_btn:hover{
+    filter: brightness(0.9);
+}
+
 
 footer {
     background-color: #D33359;
@@ -67,3 +71,50 @@ footer {
 #prezzo_finale{
     font-size: 2rem;
 }
+
+input:focus , button:focus {
+    outline-style: none !important;
+    outline: none !important;
+    outline: 0 !important;
+    border-radius: .5rem !important;
+    border: 3px solid #D33359 !important; /* Turquoise color */
+  }
+
+
+
+.check_container{
+    display: inline;
+}
+
+.new-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  .new-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+  .new-checkbox + label:after {
+    content: '';
+    margin-left: 1.5rem;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #D33359;
+    border-radius:3px;
+  }
+ 
+
+  .new-checkbox:checked + label:before {
+    content: '\f00c';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    font-size:25px;
+    color:#000000;
+    position: absolute;
+    right: .05rem;
+    top: -.5rem;
+  }
+  

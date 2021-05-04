@@ -57,7 +57,6 @@ document.querySelector('button').addEventListener('click', function () {
     }else {
         alert("Inserire un nome Burger")
         document.getElementById("prezzo_finale").innerHTML = (new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR'}).format("0"));
-
     }
    
 });
